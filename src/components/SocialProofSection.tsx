@@ -1,15 +1,6 @@
+
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-
-const companyLogos = [
-  { name: "Acme Inc.", logo: "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
-  { name: "TechCorp", logo: "https://images.unsplash.com/photo-1599305445713-1b2b2e9b2b2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
-  { name: "Global Systems", logo: "https://images.unsplash.com/photo-1599305446942-50676f67a8fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
-  { name: "InnovateLab", logo: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
-  { name: "Quantum Solutions", logo: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
-  { name: "Apex Dynamics", logo: "https://images.unsplash.com/photo-1599305445574-583b8be2e2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" }
-];
 
 const testimonials = [
   {
@@ -45,38 +36,6 @@ const SocialProofSection = () => {
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Innovative Companies</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join hundreds of businesses that are saving time and increasing productivity
-            </p>
-          </div>
-
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            {companyLogos.map((company, index) => (
-              <div 
-                key={index} 
-                className="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-              >
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  {company.logo ? (
-                    <img 
-                      src={company.logo} 
-                      alt={company.name} 
-                      className="h-12 w-auto object-contain"
-                    />
-                  ) : (
-                    <div className="text-lg md:text-xl font-bold text-gray-700">{company.name}</div>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <Separator className="my-16 opacity-30" />
-
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
