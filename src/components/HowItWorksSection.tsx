@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 
 const steps = [
@@ -6,19 +5,19 @@ const steps = [
     number: "01",
     title: "Sign Up & Connect",
     description: "Create your account and connect your existing tools and platforms in just a few clicks.",
-    image: "/images/signup-connect.png"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
   },
   {
     number: "02",
     title: "Design Your Workflow",
     description: "Use our intuitive drag-and-drop editor to create custom automation workflows that match your needs.",
-    image: "/images/workflow-design.png"
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
   },
   {
     number: "03",
     title: "Automate & Scale",
     description: "Set your workflows live and watch as your business processes run automatically, 24/7.",
-    image: "/images/automate-scale.png"
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
   }
 ];
 

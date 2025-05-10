@@ -30,7 +30,7 @@ const HeroSection = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-accent to-primary rounded-lg blur opacity-30"></div>
               <div className="relative bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
                 <img 
-                  src="/images/dashboard-preview.png" 
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
                   alt="FlowZen Dashboard" 
                   className="w-full h-auto"
                 />

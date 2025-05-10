@@ -1,15 +1,14 @@
-
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 const companyLogos = [
-  { name: "Acme Inc.", logo: "/images/logos/acme.png" },
-  { name: "TechCorp", logo: "/images/logos/techcorp.png" },
-  { name: "Global Systems", logo: "/images/logos/global-systems.png" },
-  { name: "InnovateLab", logo: "/images/logos/innovate-lab.png" },
-  { name: "Quantum Solutions", logo: "/images/logos/quantum.png" },
-  { name: "Apex Dynamics", logo: "/images/logos/apex.png" }
+  { name: "Acme Inc.", logo: "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
+  { name: "TechCorp", logo: "https://images.unsplash.com/photo-1599305445713-1b2b2e9b2b2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
+  { name: "Global Systems", logo: "https://images.unsplash.com/photo-1599305446942-50676f67a8fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
+  { name: "InnovateLab", logo: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
+  { name: "Quantum Solutions", logo: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" },
+  { name: "Apex Dynamics", logo: "https://images.unsplash.com/photo-1599305445574-583b8be2e2ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" }
 ];
 
 const testimonials = [
@@ -17,19 +16,19 @@ const testimonials = [
     quote: "FlowZen has transformed how we handle our operations. What used to take us hours now happens automatically in the background while we focus on strategic initiatives.",
     author: "Sarah Johnson",
     position: "Operations Director, TechCorp",
-    avatar: "/images/testimonials/sarah.jpg"
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
   },
   {
     quote: "The ROI on FlowZen was almost immediate. Within weeks, we recovered the time investment in setup and started seeing real productivity gains across all departments.",
     author: "Michael Chen",
     position: "CTO, InnovateLab",
-    avatar: "/images/testimonials/michael.jpg"
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
   },
   {
     quote: "As a small business owner, I was skeptical about automation tools. FlowZen changed my mind completely. It's intuitive, powerful, and has literally given me my weekends back.",
     author: "Emily Rodriguez",
     position: "Founder, Craft Collective",
-    avatar: "/images/testimonials/emily.jpg"
+    avatar: "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
   }
 ];
 

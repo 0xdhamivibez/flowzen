@@ -9,7 +9,7 @@ const CtaSection = () => {
           {/* Background decorative elements */}
           <div className="absolute top-0 left-0 w-full h-full opacity-10">
             <img 
-              src="/images/cta-pattern.png" 
+              src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" 
               alt="" 
               className="w-full h-full object-cover mix-blend-overlay"
             />
