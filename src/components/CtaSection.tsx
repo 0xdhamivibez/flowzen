@@ -1,0 +1,35 @@
+
+import { Button } from "@/components/ui/button";
+
+const CtaSection = () => {
+  return (
+    <section className="py-20 bg-primary">
+      <div className="container-custom">
+        <div className="bg-gradient-to-r from-accent to-primary/90 rounded-2xl p-8 md:p-12 shadow-xl text-white text-center">
+          <div className="inline-block py-2 px-4 bg-white/20 rounded-full text-sm font-bold mb-4 backdrop-blur-sm">
+            Limited Time Offer: 20% Off Your First Month
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            Ready to Transform Your Workflow?
+          </h2>
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto opacity-90">
+            Join thousands of businesses already saving time and boosting productivity with FlowZen
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <Button size="lg" className="bg-white hover:bg-white/90 text-accent px-8 py-6 text-lg">
+              Start Your Free Trial
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
+              Schedule a Demo
+            </Button>
+          </div>
+          <p className="mt-6 text-sm opacity-80">
+            14-day free trial • No credit card required • Cancel anytime
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CtaSection;
