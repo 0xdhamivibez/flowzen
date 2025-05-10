@@ -1,0 +1,21 @@
+
+This folder contains the following images:
+
+1. dashboard-preview.png - Hero section main image
+2. signup-connect.png - How it works step 1 image
+3. workflow-design.png - How it works step 2 image
+4. automate-scale.png - How it works step 3 image
+5. cta-pattern.png - Background pattern for CTA section
+
+Testimonial images:
+- testimonials/sarah.jpg
+- testimonials/michael.jpg
+- testimonials/emily.jpg
+
+Company logos:
+- logos/acme.png
+- logos/techcorp.png
+- logos/global-systems.png
+- logos/innovate-lab.png
+- logos/quantum.png
+- logos/apex.png

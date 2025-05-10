@@ -4,12 +4,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 const companyLogos = [
-  "Acme Inc.",
-  "TechCorp",
-  "Global Systems",
-  "InnovateLab",
-  "Quantum Solutions",
-  "Apex Dynamics"
+  { name: "Acme Inc.", logo: "/images/logos/acme.png" },
+  { name: "TechCorp", logo: "/images/logos/techcorp.png" },
+  { name: "Global Systems", logo: "/images/logos/global-systems.png" },
+  { name: "InnovateLab", logo: "/images/logos/innovate-lab.png" },
+  { name: "Quantum Solutions", logo: "/images/logos/quantum.png" },
+  { name: "Apex Dynamics", logo: "/images/logos/apex.png" }
 ];
 
 const testimonials = [
@@ -17,19 +17,19 @@ const testimonials = [
     quote: "FlowZen has transformed how we handle our operations. What used to take us hours now happens automatically in the background while we focus on strategic initiatives.",
     author: "Sarah Johnson",
     position: "Operations Director, TechCorp",
-    avatar: "/placeholder.svg"
+    avatar: "/images/testimonials/sarah.jpg"
   },
   {
     quote: "The ROI on FlowZen was almost immediate. Within weeks, we recovered the time investment in setup and started seeing real productivity gains across all departments.",
     author: "Michael Chen",
     position: "CTO, InnovateLab",
-    avatar: "/placeholder.svg"
+    avatar: "/images/testimonials/michael.jpg"
   },
   {
     quote: "As a small business owner, I was skeptical about automation tools. FlowZen changed my mind completely. It's intuitive, powerful, and has literally given me my weekends back.",
     author: "Emily Rodriguez",
     position: "Founder, Craft Collective",
-    avatar: "/placeholder.svg"
+    avatar: "/images/testimonials/emily.jpg"
   }
 ];
 
@@ -61,7 +61,15 @@ const SocialProofSection = () => {
                 className="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               >
                 <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <div className="text-lg md:text-xl font-bold text-gray-700">{company}</div>
+                  {company.logo ? (
+                    <img 
+                      src={company.logo} 
+                      alt={company.name} 
+                      className="h-12 w-auto object-contain"
+                    />
+                  ) : (
+                    <div className="text-lg md:text-xl font-bold text-gray-700">{company.name}</div>
+                  )}
                 </div>
               </div>
             ))}

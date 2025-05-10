@@ -6,19 +6,19 @@ const steps = [
     number: "01",
     title: "Sign Up & Connect",
     description: "Create your account and connect your existing tools and platforms in just a few clicks.",
-    image: "/placeholder.svg"
+    image: "/images/signup-connect.png"
   },
   {
     number: "02",
     title: "Design Your Workflow",
     description: "Use our intuitive drag-and-drop editor to create custom automation workflows that match your needs.",
-    image: "/placeholder.svg"
+    image: "/images/workflow-design.png"
   },
   {
     number: "03",
     title: "Automate & Scale",
     description: "Set your workflows live and watch as your business processes run automatically, 24/7.",
-    image: "/placeholder.svg"
+    image: "/images/automate-scale.png"
   }
 ];
 
